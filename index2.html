@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 2: Capitalize and Display Strings from an Array
+// •	Description: You are given an array of strings. Convert all the strings to uppercase and display them in a paragraph (<p>) in the HTML.
+// •	Array Method: map()
+// •	String Method: toUpperCase()
+// •	DOM Manipulation: Create a paragraph element in the DOM and display the capitalized strings.
+// •	Example Input: ["hello", "world", "javascript", "dom"]
+// •	Example Output: A paragraph in the DOM displaying:
+// –	HELLO WORLD JAVASCRIPT DOM
+const strings=["hello", "world", "javascript", "dom"];
+const capitalized=strings.map(strings=>strings.toUpperCase());
+const p=document.createElement('p');
+document.body.appendChild(p);
+const paragraphText=capitalized.join('');
+p.textContent=paragraphText;
+    </script>
+</body>
+</html>

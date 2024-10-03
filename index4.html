@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 4: Reverse Strings in an Array and Display Them
+// •	Description: You are given an array of strings. Reverse each string and display them in a list (<ul>) in the HTML.
+// •	Array Method: map()
+// •	String Method: split(), reverse(), join()
+// •	DOM Manipulation: Create an unordered list in the DOM and append reversed strings as list items.
+// •	Example Input: ["dog", "cat", "bird", "fish"]
+// •	Example Output: A list in the DOM displaying:
+// –	god
+// –	tac
+// –	drib
+// –	hsif
+array=["dog", "cat", "bird", "fish"];
+array1=array.map(element=>element.split("").reverse().join(""));
+array1.forEach(element=>{
+let ulist=document.createElement('ul');
+document.body.appendChild(ulist);
+let list=document.createElement('li');
+ulist.appendChild(list);
+list.innerText=element;
+})
+document.appendChild.body(ul);
+document.appendChild.body(ul);
+    </script>
+</body>
+</html>

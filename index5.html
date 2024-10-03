@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 5: Count and Display the Number of Vowels in Each Word
+// •	Description: You are given an array of words. For each word, count the number of vowels and display the word along with its vowel count in a list (<ul>) in the HTML.
+// •	Array Method: map()
+// •	String Method: match()
+// •	DOM Manipulation: Create an unordered list in the DOM and append each word with its vowel count.
+// •	Example Input: ["apple", "banana", "grape"]
+// •	Example Output: A list in the DOM displaying:
+// –	apple (2 vowels)
+// –	banana (3 vowels)
+// –	grape (2 vowels)
+fruits=["apple", "banana", "grape"];
+        arr=["a","e","i","o","u"];
+        function funa(){
+            res1=[];
+        for(var data of fruits){
+            res=data.split("");
+            count=0;
+            for(var data1 of res){
+                if(arr.includes(data1)){
+                    count++;
+                }
+            }
+            res1.push(`${data} (${count} vowels)`)};
+            res1.forEach(element=>{ 
+                let unlist=document.createElement("ul");
+                document.body.appendChild(unlist);
+                let list2=document.createElement("li");
+                unlist.appendChild(list2);
+                list2.innerText=element
+            });
+        };
+        funa();
+    </script>
+</body>
+</html>

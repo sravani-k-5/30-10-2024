@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1: Filter and Display Long Words from an Array
+// •	Description: You are given an array of words. Filter the words that are longer than 5 characters and display them in an unordered list (<ul>) in the HTML.
+// •	Array Method: filter()
+// •	String Method: length
+// •	DOM Manipulation: Create an unordered list in the DOM and append filtered words as list items.
+// •	Example Input: ["apple", "banana", "grape", "watermelon", "kiwi", "strawberry"]
+// •	Example Output: A list in the DOM displaying:
+// –	watermelon
+// –	strawberry
+const fruits=["apple", "banana", "grape", "watermelon", "kiwi", "strawberry"];
+const result = fruits.filter((element) => element.length > 5);
+result.forEach((element) =>{
+    const ul=document.createElement('ul');
+    const li=document.createElement('li');
+    li.innerText=element;
+    document.body.appendChild(ul);
+    ul.appendChild(li);
+});
+    </script>
+</body>
+</html>

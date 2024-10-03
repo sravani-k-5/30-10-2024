@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 3: Join and Display Array Elements as a Sentence
+// •	Description: You are given an array of words. Join the words together to form a sentence and display it in a div in the HTML.
+// •	Array Method: join()
+// •	String Method: None
+// •	DOM Manipulation: Create a div in the DOM and display the sentence.
+// •	Example Input: ["I", "am", "learning", "JavaScript", "today"]
+// •	Example Output: A div in the DOM displaying:
+// –	I am learning JavaScript today.
+const string=["I", "am", "learning", "JavaScript", "today"];
+res2=string.join(' ');
+const div=document.createElement('div');
+document.body.appendChild(div);
+div.innerText=res2;
+    </script>
+</body>
+</html>
